@@ -1,11 +1,7 @@
 <template>
     <div>
         <div>
-            <el-carousel :interval="4000" type="card" height="300pxContainer(
-                child: Container
-            )(
-                child: 
-            )">
+            <el-carousel :interval="4000" type="card" height="300px">
                 <el-carousel-item v-for="image in images" :key="image.alt">
                   <img :src="image.src" :alt="image.alt" class="carousel-image" />
                 </el-carousel-item>
@@ -22,12 +18,22 @@
         <div class="card-list">
             <div v-for="(data, index) in datas" :key="data.id">
                 <ContentCard 
-                    class="reveal"
+                    class="reveal card"
+                    @openDialog="openDetails"
+                    :info="data"
                     :image-src="data.imageLink"
                     :head="data.name"
                     :text="data.description"
                     :isLeftImage="index % 2 == 0"/>
             </div>
+
+            <el-dialog v-model="showDialog" :title="dialogInfo.name+ ' Information'">
+                <el-image class="dialog-img" :src="dialogInfo.imageLink"/>
+                <h2>{{dialogInfo.name}}</h2>
+                <p>Opening Hours: {{dialogInfo.openingHours}}</p>
+                <p>{{dialogInfo.description}}</p>
+                <p><el-icon><MapLocation /></el-icon>Locations: <el-link type="primary" :href="dialogInfo.HowToGo">{{dialogInfo.location}}</el-link></p>
+            </el-dialog>
         </div>
     </div>
 </template> 
@@ -51,17 +57,14 @@
     });
     const datas = ref(places);
 
+    const showDialog = ref(false);
+    const dialogInfo = ref({});
 
-    // const images = ref([
-    //     {
-    //         src: image1,
-    //         alt: 'Image 1'
-    //     },
-    //     {
-    //         src: image2,
-    //         alt: 'Image 2'
-    //     }
-    // ]);
+    const openDetails = (data) => {
+        dialogInfo.value = data;
+        showDialog.value = true;
+    }
+
     const imageModules = import.meta.glob('../assets/images/*.{png,jpg,jpeg,gif}');
 
     const images = ref([]);
@@ -73,9 +76,6 @@
             });
         });
     }
-
-    
-
 
 </script>
 
@@ -89,5 +89,4 @@
 .card-list {
     margin: 0.5rem;
 }
-
 </style>

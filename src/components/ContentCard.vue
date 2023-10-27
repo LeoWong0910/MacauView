@@ -1,5 +1,5 @@
 <template>
-    <div class="content-card" :class="isLeftImage ? 'left-image' : 'right-image'">
+    <div class="content-card" @click="showDetails" :class="isLeftImage ? 'left-image' : 'right-image'">
         <el-avatar shape="square" fit="cover" size="default" :src="imageSrc" />
         <div class="description">
             <h3 class="head">{{ head }}</h3>
@@ -9,9 +9,13 @@
 </template>
 
 <script setup>
-    import { defineProps } from 'vue';
+    import { ref, defineProps ,defineEmits } from 'vue';
 
     const props = defineProps({
+      info: {
+        type: Object,
+        required: true
+      },
       imageSrc: {
         type: String,
         required: true
@@ -29,6 +33,12 @@
         default: true
       }
     });
+
+    const emit = defineEmits(['openDialog']); 
+
+    const showDetails = () => {
+        emit('openDialog', props.info);
+    };
 </script>
 
 <style lang="scss" scoped>
@@ -38,6 +48,9 @@
     gap: 20px;
     border: 1.5px solid #eaeaea;
     border-radius: 0.45rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
     &.left-image {
         flex-direction: row;
     }
@@ -71,5 +84,8 @@
             padding: 10px;
         }
     }
+    
 }
+
+
 </style>
