@@ -11,8 +11,8 @@
       </router-link>
       <div class="tabs">
           <router-link to="/"><el-icon><HomeFilled /></el-icon> Home </router-link>
-          <router-link to="/myself"><el-icon><Avatar /></el-icon> MySelf </router-link>
-          <router-link to="/references"><el-icon><Histogram /></el-icon> References </router-link>
+          <router-link to="/new-event"><el-icon><Present /></el-icon> New Event </router-link>
+          <router-link to="/about-me"><el-icon><Avatar /></el-icon> About Me </router-link>
       </div>
     </header>
   
@@ -21,7 +21,7 @@
     </main>
 
     <footer>
-      <p>By: Your Name</p>
+      <p>By: LeoWong, A MPU student.</p>
     </footer>
 
     <el-backtop :right="100" :bottom="100" />

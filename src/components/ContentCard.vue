@@ -1,6 +1,6 @@
 <template>
     <div class="content-card" :class="isLeftImage ? 'left-image' : 'right-image'">
-        <el-avatar shape="square" size="500" :src="imageSrc" />
+        <el-avatar shape="square" fit="cover" size="default" :src="imageSrc" />
         <div class="description">
             <h3 class="head">{{ head }}</h3>
             <p class="text">{{ text }}</p>
@@ -62,8 +62,13 @@
     .description {
         flex: 1;
         
-        .head, .text {
+        .head {
             margin: 0;
+            padding-top: 15px;
+        }
+        .text {  
+            margin: 0;
+            padding: 10px;
         }
     }
 }

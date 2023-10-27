@@ -20,20 +20,38 @@
             </div>
         </div> -->
         <div class="card-list">
-            <div v-for="item in 10" :key="item">
+            <div v-for="(data, index) in datas" :key="data.id">
                 <ContentCard 
-                    :image-src="'www'"
-                    :head="'School ' + item"
-                    :text="'This is hell'"
-                    :isLeftImage="item % 2 !== 0"/>
+                    class="reveal"
+                    :image-src="data.imageLink"
+                    :head="data.name"
+                    :text="data.description"
+                    :isLeftImage="index % 2 == 0"/>
             </div>
         </div>
     </div>
 </template> 
 
 <script setup>
-    import  {ref} from 'vue';
+    import  {ref, onMounted} from 'vue';
+    import ScrollReveal from 'scrollreveal';
     import ContentCard from '../components/ContentCard.vue';
+
+    import { places } from '../public/data.js';
+
+
+    onMounted(() => {
+        ScrollReveal().reveal('.reveal', {
+        distance: '30px',
+        origin: 'left',
+        opacity: 0,
+        duration: 1000,
+        reset: true 
+        })
+    });
+    const datas = ref(places);
+
+
     // const images = ref([
     //     {
     //         src: image1,
@@ -55,6 +73,8 @@
             });
         });
     }
+
+    
 
 
 </script>
