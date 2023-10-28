@@ -17,7 +17,7 @@ To run the project, follow these steps:
 
 1. Navigate to the project directory in your terminal.
 2. Run `npm run dev` to start the development server.
-3. Open your browser and navigate to `http://localhost:3000` to view the website.
+3. Open your browser and navigate to `localhost:5173` to view the website.
 
 ## Technologies Used
 
