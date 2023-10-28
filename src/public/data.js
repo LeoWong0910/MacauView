@@ -39,6 +39,16 @@ export const places = [{
     "HowToGo":"https://maps.app.goo.gl/ufmMDYUDW4i5V2457"
   },
   {
+    "id":"taipa01",
+    "name":"Cunha Street",
+    "imageLink":"https://farm8.staticflickr.com/7536/15723349335_d9c5ee0176_b.jpg",
+    "location":"Rua de Correia da Silva, Macau, China",
+    "openingHours":"24Hours",
+    "description":"Rua do Cunha is a narrow pedestrian street in Vila da Taipa, the town centre of Taipa, Macau.The street is named after Pedro Alexandrino da Cunha, a Portuguese navy captain who was the 81st Governor of Macau. He arrived in Macau in 1850 and he died 37 days later from cholera, being one of the first victims of the disease in Macau.",
+    "author":["","https://rayblog.tw/cunhabazaar/"],
+    "HowToGo":"https://maps.app.goo.gl/crusGVJBgVtWQciXA"
+  },
+  {
     "id": "cotai01",
     "name": "The Venetian Macao",
     "imageLink": "https://digital.ihg.com/is/image/ihg/ic-alliance-resorts-macao-6007874135-original",
