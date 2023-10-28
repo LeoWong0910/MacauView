@@ -1,15 +1,6 @@
-export const places = [{
-    "id": "macao01",
-    "name": "Ruins of Saint Paul's",
-    "imageLink": "https://myhktour.com/wp-content/uploads/2020/05/大三巴牌坊.jpg",
-    "location": "Santo António, Macau, China",
-    "openingHours": "9:00 AM - 6:00 PM",
-    "description": "The Ruins of St. Paul’s are the ruins of a 17th-century complex in Santo António, Macao.Built from 1602 to 1640 by the Jesuits, during the time in which Portugal and Spain were under the same crown, the church was one of the largest Catholic churches in Asia at the time. It was destroyed by a fire during a typhoon on 26 January 1835. The Fortaleza do Monte overlooks the ruin.",
-    "author": ["","https://en.wikipedia.org/wiki/Ruins_of_Saint_Paul%27s","https://myhktour.com/zh-hant/大三巴牌坊/"],
-    "HowToGo": "https://maps.app.goo.gl/a4HC6ZVLkkk4H9YP7"
-  },
+export const places = [
   {
-    "id": "macao02",
+    "id": "macao01",
     "name": "A-Ma Temple",
     "imageLink": "https://i1.wp.com/banbi.tw/wp-content/uploads/20171212120731_94.jpg",
     "location": "Barra Square, Macau, China",
@@ -19,7 +10,7 @@ export const places = [{
     "HowToGo": "https://maps.app.goo.gl/9LD65NGE7CNtg2rM7"
   },
   {
-    "id": "macao03",
+    "id": "macao02",
     "name": "Senado Square",
     "imageLink": "https://media.cntraveler.com/photos/5a9085b8d363c34048b35b45/16:9/w_2240,c_limit/Senado-Square_GettyImages-85867412.jpg",
     "location": "Senado Square, Macau, China",
@@ -29,7 +20,7 @@ export const places = [{
     "HowToGo": "https://maps.app.goo.gl/E3mQFhEaJvQjWmmx5"
   },
   {
-    "id":"macao04",
+    "id":"macao03",
     "name":"Mount Fortress",
     "imageLink":"https://www.historyhit.com/app/uploads/fly-images/5156607/Fortaleza-do-Monte-1576x1074.jpg",
     "location":"112 Praceta do Museu de Macau, Macau",
@@ -37,6 +28,16 @@ export const places = [{
     "description":"The Fortaleza do Monte (Portuguese for Mount Fortress, also Monte Forte; officially Fortaleza de Nossa Senhora do Monte de São Paulo, in English: Fortress of Our Lady of the Mount of St. Paul; Chinese: 大砲台; Cantonese Yale: daaih paau yìh) is a fort in Santo António in Macau. It is the historical military centre of Macau. The fort forms part of the 'Historic Centre of Macau' and is a UNESCO World Heritage Site.",
     "author":["https://en.wikipedia.org/wiki/Fortaleza_do_Monte","https://www.historyhit.com/locations/fortaleza-do-monte/"],
     "HowToGo":"https://maps.app.goo.gl/ufmMDYUDW4i5V2457"
+  },
+  {
+    "id": "macao04",
+    "name": "Ruins of Saint Paul's",
+    "imageLink": "https://myhktour.com/wp-content/uploads/2020/05/大三巴牌坊.jpg",
+    "location": "Santo António, Macau, China",
+    "openingHours": "9:00 AM - 6:00 PM",
+    "description": "The Ruins of St. Paul’s are the ruins of a 17th-century complex in Santo António, Macao.Built from 1602 to 1640 by the Jesuits, during the time in which Portugal and Spain were under the same crown, the church was one of the largest Catholic churches in Asia at the time. It was destroyed by a fire during a typhoon on 26 January 1835. The Fortaleza do Monte overlooks the ruin.",
+    "author": ["","https://en.wikipedia.org/wiki/Ruins_of_Saint_Paul%27s","https://myhktour.com/zh-hant/大三巴牌坊/"],
+    "HowToGo": "https://maps.app.goo.gl/a4HC6ZVLkkk4H9YP7"
   },
   {
     "id":"taipa01",
@@ -58,7 +59,16 @@ export const places = [{
     "author": ["https://en.wikipedia.org/wiki/The_Venetian_Macao", "https://www.ihg.com/intercontinental/hotels/us/es/macao/mfmve/hoteldetail/hotel-reviews"],
     "HowToGo": "https://maps.app.goo.gl/D14tprFNascfG1fc8"
   },
-  
+  {
+    "id":"cotai02",
+    "name":"Galaxy Macau",
+    "imageLink":"https://img.galaxymacau.com/media_library/gh_hotel_main_hero.jpg?x-oss-process=image/resize%2Cm_lfit%2Cw_1920%2Climit_0/format%2Cwebp/quality%2Cq_75",
+    "location":"East Square, Galaxy Macau, Macau, China",
+    "openingHours":"24Hours",
+    "description":"Galaxy Macau is a casino resort located in Cotai, Macau, SAR of People's Republic of China. Construction on the Cotai project began in 2002. Its opening was rescheduled several times. Its developer, Galaxy Entertainment Group, announced on the 10th of March 2011 that the HKD 14.9 billion (US$1.9 billion) resort would officially open on 15 May 2011.The resort was designed by Gary Goddard.The resort currently consists of five different hotels, each with its own 'theme', Galaxy Macau, Banyan Tree, Hotel Okura, The Ritz-Carlton and JW Marriott.",
+    "author":["https://en.wikipedia.org/wiki/Galaxy_Macau","https://www.galaxymacau.com/zh-hant/hotels/galaxy-hotel/"],
+    "HowToGo":"https://maps.app.goo.gl/k32k8azKVnXZXCbr7"
+  },
   // data template
   // {
   //   "id":"",
