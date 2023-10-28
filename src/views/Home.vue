@@ -88,6 +88,7 @@
 
 .card-list {
     margin: 0.5rem;
+    padding: 10px;
 }
 
 
