@@ -18,7 +18,7 @@
         <div class="card-list">
             <div v-for="(data, index) in datas" :key="data.id">
                 <ContentCard 
-                    class="reveal card"
+                    class="reveal"
                     @openDialog="openDetails"
                     :info="data"
                     :image-src="data.imageLink"
@@ -89,4 +89,6 @@
 .card-list {
     margin: 0.5rem;
 }
+
+
 </style>

@@ -29,6 +29,16 @@ export const places = [{
     "HowToGo": "https://maps.app.goo.gl/E3mQFhEaJvQjWmmx5"
   },
   {
+    "id":"macao04",
+    "name":"Mount Fortress",
+    "imageLink":"https://www.historyhit.com/app/uploads/fly-images/5156607/Fortaleza-do-Monte-1576x1074.jpg",
+    "location":"112 Praceta do Museu de Macau, Macau",
+    "openingHours":"10:00 AM - 6:00 PM",
+    "description":"The Fortaleza do Monte (Portuguese for Mount Fortress, also Monte Forte; officially Fortaleza de Nossa Senhora do Monte de São Paulo, in English: Fortress of Our Lady of the Mount of St. Paul; Chinese: 大砲台; Cantonese Yale: daaih paau yìh) is a fort in Santo António in Macau. It is the historical military centre of Macau. The fort forms part of the 'Historic Centre of Macau' and is a UNESCO World Heritage Site.",
+    "author":["https://en.wikipedia.org/wiki/Fortaleza_do_Monte","https://www.historyhit.com/locations/fortaleza-do-monte/"],
+    "HowToGo":"https://maps.app.goo.gl/ufmMDYUDW4i5V2457"
+  },
+  {
     "id": "cotai01",
     "name": "The Venetian Macao",
     "imageLink": "https://digital.ihg.com/is/image/ihg/ic-alliance-resorts-macao-6007874135-original",
@@ -38,4 +48,17 @@ export const places = [{
     "author": ["https://en.wikipedia.org/wiki/The_Venetian_Macao", "https://www.ihg.com/intercontinental/hotels/us/es/macao/mfmve/hoteldetail/hotel-reviews"],
     "HowToGo": "https://maps.app.goo.gl/D14tprFNascfG1fc8"
   },
+  
+  // data template
+  // {
+  //   "id":"",
+  //   "name":"",
+  //   "imageLink":"",
+  //   "location":"",
+  //   "openingHours":"",
+  //   "description":"",
+  //   "author":["",""],
+  //   "HowToGo":""
+  // },
+  
 ];

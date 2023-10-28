@@ -1,5 +1,5 @@
 <template>
-    <div class="content-card card-effect" @click="showDetails" :class="isLeftImage ? 'left-image' : 'right-image'">
+    <div :class="isLeftImage ? 'left-image' : 'right-image'" class="card-effect content-card" @click="showDetails" >
         <el-avatar shape="square" fit="cover" size="default" :src="imageSrc" />
         <div class="description">
             <h3 class="head">{{ head }}</h3>
@@ -42,6 +42,15 @@
 </script>
 
 <style lang="scss" scoped>
+.card-effect {
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        transform: scale(1.05) translateY(-5px) !important;
+    }
+}
+
 .content-card {
     display: flex;
     align-items: center;
@@ -90,9 +99,5 @@
     
 }
 
-.card-effect {
-    &:hover {
-        transform: scale(1.05);
-    }
-}
+
 </style>
