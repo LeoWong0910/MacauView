@@ -1,6 +1,6 @@
-# Macao View Ports Website
+# Macao ViewPoints Website
 
-This website showcases the beautiful view ports of Macao, providing tourists with a visual guide to the best spots to visit. This project is also my Multimedia Assignment.
+This website showcases the beautiful viewopints of Macao, providing tourists with a visual guide to the best spots to visit. This project is also my Multimedia Assignment.
 
 ## Installation
 
