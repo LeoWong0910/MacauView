@@ -38,10 +38,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
-  height: 5rem;
-  background-color: #615649;
-  border-bottom: 1px solid #ccc;
+  padding: 1rem 2rem;
+  height: auto;
+  background-color: #343434; // A slightly different shade from #242424 for differentiation
+  border-bottom: 1px solid #3a3a3a; // Adjusted the color for the border
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); // Enhanced shadow for depth
 
   .left-icons {
     display: block;
@@ -52,6 +53,9 @@ header {
   
     svg {
       display: block;
+      text {
+        fill: #ffffff; // White text for contrast
+      }
     }
   }
 
@@ -65,10 +69,18 @@ header {
     router-link {
       text-decoration: none;
       padding: 0.5rem 1rem;
-      border: 1px solid #ccc;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff; // White text for contrast
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3); // A brighter border on hover
+      }
     }
   }
 }
+
+
 
 main {
   padding: 2rem;
