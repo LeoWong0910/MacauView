@@ -21,7 +21,8 @@
     </main>
 
     <footer>
-      <p>By: LeoWong, A MPU student.</p>
+      <el-divider/>
+      <p>By: LeoWong(P2104214), A MPU student.</p>
     </footer>
 
     <el-backtop :right="100" :bottom="100" />

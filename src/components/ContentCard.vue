@@ -1,5 +1,5 @@
 <template>
-    <div class="content-card" @click="showDetails" :class="isLeftImage ? 'left-image' : 'right-image'">
+    <div class="content-card card-effect" @click="showDetails" :class="isLeftImage ? 'left-image' : 'right-image'">
         <el-avatar shape="square" fit="cover" size="default" :src="imageSrc" />
         <div class="description">
             <h3 class="head">{{ head }}</h3>
@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-    import { ref, defineProps ,defineEmits } from 'vue';
+    import { defineProps ,defineEmits } from 'vue';
 
     const props = defineProps({
       info: {
@@ -48,7 +48,10 @@
     gap: 20px;
     border: 1.5px solid #eaeaea;
     border-radius: 0.45rem;
+    background-color: #242424;
+
     cursor: pointer;
+
     transition: transform 0.3s ease;
 
     &.left-image {
@@ -87,5 +90,9 @@
     
 }
 
-
+.card-effect {
+    &:hover {
+        transform: scale(1.05);
+    }
+}
 </style>
