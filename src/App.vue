@@ -12,6 +12,7 @@
       <div class="tabs">
           <router-link to="/"><el-icon><HomeFilled /></el-icon> Home </router-link>
           <router-link to="/new-event"><el-icon><Present /></el-icon> New Event </router-link>
+          <router-link to="/bar-restaurant"><el-icon><ColdDrink /></el-icon> Bar & Restaurant</router-link>
           <router-link to="/about-me"><el-icon><Avatar /></el-icon> About Me </router-link>
       </div>
     </header>
